@@ -1,9 +1,15 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    console.log(req);
+    //console.log(req);
     // process.exit() :- incase you want to exit the process and close the event loop
-
+    if(req.url === '/'){
+        res.write('<html>');
+        res.write('<head><title> Message </title></head>');
+        res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>');
+        res.write('</html>');
+        return res.end();    
+    }
     // sending response:
     res.setHeader('Content-Type', 'text/html');
     res.write('<html>');
