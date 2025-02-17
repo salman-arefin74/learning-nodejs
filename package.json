@@ -1,0 +1,16 @@
+{
+    "name": "nodejs-udemy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo 'nothing to do'",
+      "start": "nodemon index.js"
+    },
+    "author": "Salman Arefin",
+    "license": "ISC",
+    "devDependencies": {
+      "nodemon": "^3.1.9"
+    }
+  }
+  
