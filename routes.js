@@ -14,12 +14,10 @@ const requestHandler = (req, res) => {
         const body = [];
         req.on('data', (chunk) => {
             body.push(chunk);
-            console.log(body);
         });
         return req.on('end', () => {
             const parsedBody = Buffer.concat(body).toString();
             const message = parsedBody.split('=')[1];
-            console.log(message);
             fs.writeFile('message.txt', message, (err) => {
                 res.statusCode = 302;
                 res.setHeader('Location', '/');
