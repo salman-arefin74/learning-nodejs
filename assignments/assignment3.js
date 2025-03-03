@@ -8,7 +8,6 @@ app.use('/users', (req, res, next) => {
     res.send('<h1>Users</h1>');
 });
 
-
 app.use('/', (req, res, next) => {
     res.send('<h1>Home</h1>');
 });
