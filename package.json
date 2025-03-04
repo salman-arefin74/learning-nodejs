@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo 'nothing to do'",
     "start": "nodemon index.js",
-    "prettier": "prettier --write \"?(controllers|routes|utils|)/**/*.js\" index.js"
+    "prettier": "prettier --write \"?(controllers|routes|utils|models)/**/*.js\" index.js"
   },
   "author": "Salman Arefin",
   "license": "ISC",
